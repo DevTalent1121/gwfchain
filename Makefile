@@ -42,7 +42,6 @@ cmds:
 	cd cmd/puppeth; go build -o ../../bin/puppeth
 	cd cmd/rlpdump; go build -o ../../bin/rlpdump
 	cd cmd/wnode; go build -o ../../bin/wnode
-	cd cmd/web3; go build -o ../../bin/web3
 	@echo "Done building."
 
 docker:
