@@ -22,26 +22,26 @@ $(error Running Go version $(cur_ver). Need $(min_ver) or higher. Please upgrade
 endif
 
 gwfchain:
-	cd cmd/gochain; go build -o ../../bin/gwfchain
+	cd cmd/gochain; go build -ldflags "-s -w" -o ../../bin/gwfchain
 	@echo "Done building."
 	@echo "Run \"bin/gwfchain\" to launch gwfchain."
-
+# go build -ldflags "-s -w"
 bootnode:
-	cd cmd/bootnode; go build -o ../../bin/gwfchain-bootnode
+	cd cmd/bootnode; go build -ldflags "-s -w" -o ../../bin/gwfchain-bootnode
 	@echo "Done building."
 	@echo "Run \"bin/gwfchain-bootnode\" to launch gwfchain."
 
 cmds:
 	@echo "Building CMD folder..."
-	cd cmd/abigen; go build -o ../../bin/abigen
-	cd cmd/ethkey; go build -o ../../bin/ethkey
-	cd cmd/evm; go build -o ../../bin/evm
-	cd cmd/faucet; go build -o ../../bin/faucet
-	cd cmd/gochain-ethdb; go build -o ../../bin/gwfchain-ethdb
-	cd cmd/p2psim; go build -o ../../bin/p2psim
-	cd cmd/puppeth; go build -o ../../bin/puppeth
-	cd cmd/rlpdump; go build -o ../../bin/rlpdump
-	cd cmd/wnode; go build -o ../../bin/wnode
+	cd cmd/abigen; go build -ldflags "-s -w" -o ../../bin/abigen
+	cd cmd/ethkey; go build -ldflags "-s -w" -o ../../bin/ethkey
+	cd cmd/evm; go build -ldflags "-s -w" -o ../../bin/evm
+	cd cmd/faucet; go build -ldflags "-s -w" -o ../../bin/faucet
+	cd cmd/gochain-ethdb; go build -ldflags "-s -w" -o ../../bin/gwfchain-ethdb
+	cd cmd/p2psim; go build -ldflags "-s -w" -o ../../bin/p2psim
+	cd cmd/puppeth; go build -ldflags "-s -w" -o ../../bin/puppeth
+	cd cmd/rlpdump; go build -ldflags "-s -w" -o ../../bin/rlpdump
+	cd cmd/wnode; go build -ldflags "-s -w" -o ../../bin/wnode
 	@echo "Done building."
 
 docker:
