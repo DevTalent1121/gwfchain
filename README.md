@@ -1,4 +1,4 @@
-![GWFChain Logo](https://user-images.githubusercontent.com/75826/110122817-18cf5100-7d8e-11eb-8094-5fd189516f3d.png)
+![GWFChain Logo](https://github.com/NlaakStudiosLLC/global-wealth-and-freedom/blob/18a9073484d8bc820ee72a7108a06d1043107d98/logos/platform-icons/gwf_platform_logo-smartchain.png)
 
 ## GWFChain
 
