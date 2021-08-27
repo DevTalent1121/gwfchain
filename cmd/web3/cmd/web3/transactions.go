@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/accounts/abi"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/core/types"
-	"github.com/NlaakStudiosLLC/gochain/web3"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/accounts/abi"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/core/types"
 	"github.com/shopspring/decimal"
 )
 

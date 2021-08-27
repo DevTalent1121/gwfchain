@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/accounts/abi"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/accounts/abi"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
 )
 
 func Test_parseParam(t *testing.T) {

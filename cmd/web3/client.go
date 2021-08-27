@@ -8,10 +8,10 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common/hexutil"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/core/types"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/rpc"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common/hexutil"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/core/types"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/rpc"
 )
 
 // Client is an interface for the web3 RPC API.

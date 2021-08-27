@@ -13,15 +13,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/core/types"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/core/types"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/accounts/abi"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/crypto"
-	"github.com/NlaakStudiosLLC/gochain/web3"
-	"github.com/NlaakStudiosLLC/gochain/web3/assets"
-	"github.com/NlaakStudiosLLC/gochain/web3/did"
-	"github.com/NlaakStudiosLLC/gochain/web3/vc"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3/assets"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3/did"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3/vc"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/accounts/abi"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/crypto"
 	"golang.org/x/crypto/sha3"
 )
 

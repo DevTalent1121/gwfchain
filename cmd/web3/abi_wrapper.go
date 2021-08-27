@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/NlaakStudiosLLC/gochain/v3/accounts/abi"
-	"github.com/NlaakStudiosLLC/gochain/v3/cmd/web3/assets"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/accounts/abi"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/cmd/web3/assets"
 )
 
 // GetABI accepts either built in contracts (erc20, erc721), a file location or a URL

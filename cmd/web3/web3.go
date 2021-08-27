@@ -18,12 +18,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/accounts/abi"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common/hexutil"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/core/types"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/crypto"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/rlp"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/accounts/abi"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common/hexutil"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/core/types"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/crypto"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/rlp"
 	"github.com/shopspring/decimal"
 )
 

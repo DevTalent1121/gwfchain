@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/crypto"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/crypto"
 )
 
 func CreateAccount() (*Account, error) {

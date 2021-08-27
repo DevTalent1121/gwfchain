@@ -11,8 +11,8 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/accounts/abi/bind"
-	"github.com/NlaakStudiosLLC/gochain/web3/assets"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3/assets"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/accounts/abi/bind"
 	"github.com/urfave/cli"
 )
 

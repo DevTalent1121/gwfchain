@@ -3,7 +3,7 @@ package did_test
 import (
 	"testing"
 
-	"github.com/NlaakStudiosLLC/gochain/web3/did"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3/did"
 )
 
 func TestParse(t *testing.T) {

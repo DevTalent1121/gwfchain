@@ -10,8 +10,8 @@ This repository also exports the backing golang `package web3`.
 
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
-)](https://godoc.org/github.com/NlaakStudiosLLC/gochain/web3)
-![](https://github.com/NlaakStudiosLLC/gochain/web3/workflows/release/badge.svg)
+)](https://godoc.org/github.com/NlaakStudiosLLC/gwfchain/cmd/web3)
+![](https://github.com/NlaakStudiosLLC/gwfchain/cmd/web3/workflows/release/badge.svg)
 
 ```sh
 web3 --help
@@ -61,7 +61,7 @@ GLOBAL OPTIONS:
 Quick one line install:
 
 ```sh
-curl -LSs https://raw.githubusercontent.com/gochain/web3/master/install.sh | sh
+curl -LSs https://raw.githubusercontent.com/gwfchain/cmd/web3/master/install.sh | sh
 ```
 
 [Install Docker](https://docs.docker.com/install/) (optional) - not required for all commands, but if you plan on building and deploying smart contracts, 
@@ -487,13 +487,13 @@ web3 contract verify --explorer-api EXPLORER_API_URL --address CONTRACT_ADDRESS 
 You can use the script to install a specific version:
 
 ```sh
-curl -LSs https://raw.githubusercontent.com/gochain/web3/master/install.sh | sh -s v0.0.9
+curl -LSs https://raw.githubusercontent.com/gwfchain/cmd/web3/master/install.sh | sh -s v0.0.9
 ```
 
 ### Install using the Go language
 
 ```sh
-go install github.com/NlaakStudiosLLC/gochain/web3/cmd/web3
+go install github.com/NlaakStudiosLLC/gwfchain/cmd/web3/cmd/web3
 ```
 
 ### Build from source
@@ -501,7 +501,7 @@ go install github.com/NlaakStudiosLLC/gochain/web3/cmd/web3
 Clone this repo:
 
 ```sh
-git clone https://github.com/NlaakStudiosLLC/gochain/web3
+git clone https://github.com/NlaakStudiosLLC/gwfchain/cmd/web3
 cd web3
 make install
 # or just `make build` to build it into current directory

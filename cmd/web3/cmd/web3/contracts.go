@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/NlaakStudiosLLC/gochain/web3"
+	"github.com/NlaakStudiosLLC/gwfchain/cmd/web3"
 )
 
 func ListContract(contractFile string) {

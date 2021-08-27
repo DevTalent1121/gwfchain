@@ -5,7 +5,7 @@ set -e
 if [ "$1" != "" ]; then
     version="$1"
 else
-    version=`curl --silent https://api.github.com/repos/gochain/web3/releases/latest  | grep tag_name | cut -f 2 -d : | cut -f 2 -d '"'`
+    version=`curl --silent https://api.github.com/repos/gwfchain/cmd/web3/releases/latest  | grep tag_name | cut -f 2 -d : | cut -f 2 -d '"'`
 fi
 
 
@@ -51,7 +51,7 @@ else
     exit 1
 fi
 
-url='https://github.com/NlaakStudiosLLC/gochain/web3/releases/download'
+url='https://github.com/NlaakStudiosLLC/gwfchain/cmd/web3/releases/download'
 
 # perform some very rudimentary platform detection
 case "$(uname)" in

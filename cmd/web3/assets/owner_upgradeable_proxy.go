@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/NlaakStudiosLLC/gochain/gochain/v3/common"
+	"github.com/NlaakStudiosLLC/gwfchain/v3/common"
 )
 
 // Contract only upgradeable by owner.
