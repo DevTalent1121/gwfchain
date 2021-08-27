@@ -1,6 +1,6 @@
-![GWFChain Logo](https://user-images.githubusercontent.com/75826/110122817-18cf5100-7d8e-11eb-8094-5fd189516f3d.png)
+![GWFChain Logo](https://github.com/NlaakStudiosLLC/global-wealth-and-freedom/blob/18a9073484d8bc820ee72a7108a06d1043107d98/logos/platform-icons/gwf_platform_logo-smartchain.png)
 
-## GWFChain
+## Global Wealth & Freedom Smartchain (GWFChain)
 
 Official golang implementation of the GWFChain protocol.
 
@@ -12,16 +12,9 @@ Mainnet: [Live Stats](https://stats.gwf.io/) | [Block Explorer](https://explorer
 
 Testnet: [Live Stats](https://testnet-stats.gwf.io/) | [Block Explorer](https://testnet-explorer.gwf.io/) | [Public RPC Endpoint](https://testnet-rpc.gwf.io/)
 
-## General Documentation
-
-If you are looking to build DApps, deploy smart contracts, setup a private network or run a node, please see
-our [Documentation Repository](https://github.com/NlaakStudiosLLC/docs), it will be much more useful to you.
-
-If you plan on working on the GWFChain core code, then read on.
-
 ## Building the source
 
-Building gwfchain requires both a Go (version 1.12 or later) and a C compiler.
+Building gwfchain requires both a Go (version 1.16 or later) and a C compiler.
 You can install them using your favourite package manager.
 Once the dependencies are installed, run:
 
