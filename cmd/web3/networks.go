@@ -3,10 +3,10 @@ package web3
 import "math/big"
 
 const (
-	testnetExplorerURL = "https://testnet-explorer.gochain.io/api"
-	mainnetExplorerURL = "https://explorer.gochain.io/api"
-	testnetURL         = "https://testnet-rpc.gochain.io"
-	mainnetURL         = "https://rpc.gochain.io"
+	testnetExplorerURL = "https://testnet-explorer.gwf.io/api"
+	mainnetExplorerURL = "https://explorer.gwf.io/api"
+	testnetURL         = "https://testnet-rpc.gwf.io"
+	mainnetURL         = "https://rpc.gwf.io"
 )
 
 var Networks = map[string]Network{
@@ -14,20 +14,20 @@ var Networks = map[string]Network{
 		Name:        "testnet",
 		URL:         testnetURL,
 		ChainID:     big.NewInt(31337),
-		Unit:        "GO",
+		Unit:        "GWFU",
 		ExplorerURL: testnetExplorerURL,
 	},
-	"gochain": {
-		Name:        "gochain",
+	"gwfchain": {
+		Name:        "gwfchain",
 		URL:         mainnetURL,
 		ChainID:     big.NewInt(60),
-		Unit:        "GO",
+		Unit:        "GWFU",
 		ExplorerURL: mainnetExplorerURL,
 	},
 	"localhost": {
 		Name: "localhost",
 		URL:  "http://localhost:8545",
-		Unit: "GO",
+		Unit: "GWFU",
 	},
 	"ethereum": {
 		Name: "ethereum",

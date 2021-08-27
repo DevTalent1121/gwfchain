@@ -49,10 +49,12 @@ require (
 	github.com/peterh/liner v1.1.1-0.20190123174540-a2c9a5303de7
 	github.com/rjeczalik/notify v0.9.1
 	github.com/rs/cors v1.7.0
+	github.com/shopspring/decimal v1.2.0
 	github.com/smartystreets/assertions v0.0.0-20190116191733-b6c0e53d7304 // indirect
 	github.com/status-im/keycard-go v0.0.0-20200402102358-957c09536969
 	github.com/stretchr/testify v1.7.0
 	github.com/syndtr/goleveldb v1.0.1-0.20200815110645-5c35d600f0ca
+	github.com/treeder/gotils v0.1.3
 	github.com/urfave/cli v1.22.1
 	github.com/wsddn/go-ecdh v0.0.0-20161211032359-48726bab9208
 	go.opencensus.io v0.22.2
