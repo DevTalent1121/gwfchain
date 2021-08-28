@@ -1,4 +1,4 @@
-# GWF Smartchain (forked from gwfchain)
+# GWF Smartchain (forked from GoChain)
 
 ## Ports:
 - mainnet: 1969
