@@ -53,15 +53,15 @@ the user doesn't care about years-old historical data, so we can fast-sync quick
 state of the network. To do so:
 
 ```
-$ gwfchain console
+./gwfchain console
 ```
 
 This command will:
 
- * Start GWFChain in fast sync mode (default, can be changed with the `--syncmode` flag), causing it to
+- Start GWFChain in fast sync mode (default, can be changed with the `--syncmode` flag), causing it to
    download more data in exchange for avoiding processing the entire history of the GWFChain network,
    which is very CPU intensive.
- * Start up GWFChain's built-in interactive [JavaScript console](https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console),
+- Start up GWFChain's built-in interactive [JavaScript console](https://github.com/ethereum/go-ethereum/wiki/JavaScript-Console),
    (via the trailing `console` subcommand) through which you can invoke all official [`web3` methods](https://github.com/ethereum/wiki/wiki/JavaScript-API)
    as well as GWFChain's own [management APIs](https://github.com/ethereum/go-ethereum/wiki/Management-APIs).
    This too is optional and if you leave it out you can always attach to an already running GWFChain instance
@@ -74,8 +74,8 @@ almost certainly would like to do that without any real money involved until you
 entire system. In other words, instead of attaching to the main network, you want to join the **test**
 network with your node, which is fully equivalent to the main network, but with play-GOC only.
 
-```
-$ gwfchain --testnet console
+```sh
+./gwfchain --testnet console
 ```
 
 The `console` subcommand have the exact same meaning as above and they are equally useful on the
@@ -83,31 +83,31 @@ testnet too. Please see above for their explanations if you've skipped to here.
 
 Specifying the `--testnet` flag however will reconfigure your GWFChain instance a bit:
 
- * Instead of using the default data directory (`~/.gwfchain` on Linux for example), GWFChain will nest
-   itself one level deeper into a `testnet` subfolder (`~/.gwfchain/testnet` on Linux). Note, on OSX
-   and Linux this also means that attaching to a running testnet node requires the use of a custom
-   endpoint since `gwfchain attach` will try to attach to a production node endpoint by default. E.g.
-   `gwfchain attach <datadir>/testnet/gwfchain.ipc`. Windows users are not affected by this.
- * Instead of connecting the main GWFChain network, the client will connect to the test network,
-   which uses different P2P bootnodes, different network IDs and genesis states.
+- Instead of using the default data directory (`~/.gwfchain` on Linux for example), GWFChain will nest
+ itself one level deeper into a `testnet` subfolder (`~/.gwfchain/testnet` on Linux). Note, on OSX
+ and Linux this also means that attaching to a running testnet node requires the use of a custom
+ endpoint since `gwfchain attach` will try to attach to a production node endpoint by default. E.g.
+ `gwfchain attach <datadir>/testnet/gwfchain.ipc`. Windows users are not affected by this.
+- Instead of connecting the main GWFChain network, the client will connect to the test network,
+ which uses different P2P bootnodes, different network IDs and genesis states.
    
-*Note: Although there are some internal protective measures to prevent transactions from crossing
+**Note: Although there are some internal protective measures to prevent transactions from crossing
 over between the main network and test network, you should make sure to always use separate accounts
 for play-money and real-money. Unless you manually move accounts, GWFChain will by default correctly
-separate the two networks and will not make any accounts available between them.*
+separate the two networks and will not make any accounts available between them.**
 
 ### Configuration
 
 As an alternative to passing the numerous flags to the `gwfchain` binary, you can also pass a configuration file via:
 
 ```sh
-$ gwfchain --config /path/to/your_config.toml
+./gwfchain --config /path/to/your_config.toml
 ```
 
 To get an idea how the file should look like you can use the `dumpconfig` subcommand to export your existing configuration:
 
 ```sh
-$ gwfchain --your-favourite-flags dumpconfig
+./gwfchain --your-favourite-flags dumpconfig
 ```
 
 #### Docker quick start
@@ -124,7 +124,7 @@ This will start GWFChain in fast-sync mode with a DB memory allowance of 1GB jus
 
 Do not forget `--rpcaddr 0.0.0.0`, if you want to access RPC from other containers and/or hosts. By default, `gwfchain` binds to the local interface and RPC endpoints is not accessible from the outside.
 
-### Programatically interfacing GWFChain nodes
+### Programmatically interfacing GWFChain nodes
 
 As a developer, sooner rather than later you'll want to start interacting with GWFChain network via your 
 own programs and not manually through the console. To aid this, GWFChain has built in
@@ -138,19 +138,19 @@ These can be turned on/off and configured as you'd expect.
 
 HTTP based JSON-RPC API options:
 
-  * `--rpc` Enable the HTTP-RPC server
-  * `--rpcaddr` HTTP-RPC server listening interface (default: "localhost")
-  * `--rpcport` HTTP-RPC server listening port (default: 8545)
-  * `--rpcapi` API's offered over the HTTP-RPC interface (default: "eth,net,web3")
-  * `--rpccorsdomain` Comma separated list of domains from which to accept cross origin requests (browser enforced)
-  * `--ws` Enable the WS-RPC server
-  * `--wsaddr` WS-RPC server listening interface (default: "localhost")
-  * `--wsport` WS-RPC server listening port (default: 8546)
-  * `--wsapi` API's offered over the WS-RPC interface (default: "eth,net,web3")
-  * `--wsorigins` Origins from which to accept websockets requests
-  * `--ipcdisable` Disable the IPC-RPC server
-  * `--ipcapi` API's offered over the IPC-RPC interface (default: "admin,debug,eth,miner,net,personal,shh,txpool,web3")
-  * `--ipcpath` Filename for IPC socket/pipe within the datadir (explicit paths escape it)
+- `--rpc` Enable the HTTP-RPC server
+- `--rpcaddr` HTTP-RPC server listening interface (default: "localhost")
+- `--rpcport` HTTP-RPC server listening port (default: 8545)
+- `--rpcapi` API's offered over the HTTP-RPC interface (default: "eth,net,web3")
+- `--rpccorsdomain` Comma separated list of domains from which to accept cross origin requests (browser enforced)
+- `--ws` Enable the WS-RPC server
+- `--wsaddr` WS-RPC server listening interface (default: "localhost")
+- `--wsport` WS-RPC server listening port (default: 8546)
+- `--wsapi` API's offered over the WS-RPC interface (default: "eth,net,web3")
+- `--wsorigins` Origins from which to accept websockets requests
+- `--ipcdisable` Disable the IPC-RPC server
+- `--ipcapi` API's offered over the IPC-RPC interface (default: "admin,debug,eth,miner,net,personal,shh,txpool,web3")
+- `--ipcpath` Filename for IPC socket/pipe within the datadir (explicit paths escape it)
 
 You'll need to use your own programming environments' capabilities (libraries, tools, etc) to connect
 via HTTP, WS or IPC to a GWFChain node configured with the above flags and you'll need to speak [JSON-RPC](http://www.jsonrpc.org/specification)
@@ -175,11 +175,19 @@ for the maintainers to review and merge into the main code base.
 
 Please make sure your contributions adhere to our coding guidelines:
 
- * Code must adhere to the official Go [formatting](https://golang.org/doc/effective_go.html#formatting) guidelines (i.e. uses [gofmt](https://golang.org/cmd/gofmt/)).
- * Code must be documented adhering to the official Go [commentary](https://golang.org/doc/effective_go.html#commentary) guidelines.
- * Pull requests need to be based on and opened against the `master` branch.
- * Commit messages should be prefixed with the package(s) they modify.
-   * E.g. "gwfchain, rpc: make trace configs optional"
+- Code must adhere to the official Go [formatting](https://golang.org/doc/effective_go.html#formatting) guidelines (i.e. uses [gofmt](https://golang.org/cmd/gofmt/)).
+- Code must be documented adhering to the official Go [commentary](https://golang.org/doc/effective_go.html#commentary) guidelines.
+- Pull requests need to be based on and opened against the `master` branch.
+- Commit messages should be prefixed with the package(s) they modify.
+- E.g. "gwfchain, rpc: make trace configs optional"
+
+## Using console (web3.js) with GWFChain
+
+### Create a new account
+
+```js
+web3.eth.personal.newAccount('hYV9rGG23v9xTkCn').then(console.log);
+```
 
 
 ## Using Truffle Suite with GWFChain
