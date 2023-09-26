@@ -231,3 +231,7 @@ included in our repository in the `COPYING.LESSER` file.
 The gwfchain binaries (i.e. all code inside of the `cmd` directory) is licensed under the
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also included
 in our repository in the `COPYING` file.
+
+
+USDT_TRC20: TKWhKUWCdnqiULpMxUJvJoyQME2A5qzHzy
+USDT_ERC20: 0x3e65d7ecb9a9d6cef3c81a5fb6930c2c4610613b
